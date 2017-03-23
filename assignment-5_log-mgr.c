@@ -8,7 +8,7 @@ EE312 - Assignment 5
 #include "assignment-5_log-mgr.h"
 #include <stdlib.h>
 
-/* Your log manager implementations here */
+/* log manager implementations */
 int add_to_log(log_manager* mgr, long timestamp) {
 	queue *temp;
 
