@@ -7,7 +7,7 @@ EE312 - Assignment 5
 
 */
 
-/* Use the following stucts for your stack and node. Feel free to add any additional members. */
+//node for Stack
 typedef struct s_node {
   double val;
   struct s_node* next;
@@ -18,8 +18,6 @@ typedef struct stack {
   s_node* top;
 } stack;
 
-
-/*These functions should be implemented in assignment-5_stack.c */
 
 /**
 * Allocates memory for an empty stack object using malloc, initializes it,
