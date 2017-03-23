@@ -42,10 +42,10 @@ void push(stack* s, double val) {
 
 	temp = malloc(sizeof(s_node));
 
-	temp->val = val;					//setting the value of the newly created node
+	temp->val = val;				//setting the value of the newly created node
 	temp->next = s->top;				//s->top has NULL for the first node
 
-	s->top = temp;						//top of stack is element that was most recently pushed
+	s->top = temp;					//top of stack is element that was most recently pushed
 
 	
 }
@@ -56,16 +56,16 @@ double pop(stack* s) {
 	s_node *tempNext;
 
 
-	if (s->size > 0) {						// shouldn't pop if empty;
+	if (s->size > 0) {					// shouldn't pop if empty;
 
 		s->size = s->size - 1;				//removing an element from the stack
 
-		temp = s->top;						// temp points to top of stack
+		temp = s->top;					// temp points to top of stack
 		value = temp->val;
 
 		s->top = temp->next;				// top of stack now points to next element down
 
-		free(temp);							//Frees memory 
+		free(temp);					//Frees memory 
 
 
 		return(value);
@@ -96,7 +96,7 @@ int stack_index_of(stack* s, double val) {
 
 	}
 	
-	return(-1);										//if no elements found
+	return(-1);									//if no elements found
 }
 
 void stack_print(stack* s) {
