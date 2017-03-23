@@ -6,8 +6,7 @@ EE312 - Assignment 5
 
 */
 
-
-/* Use the following stucts for your queue and node */
+// Node for Queue
 typedef struct q_node {
   long data;
   struct q_node* next;
@@ -19,9 +18,6 @@ typedef struct queue {
        q_node* tail;
 } queue;
 
-
-
-/*These functions should be implemented in assignment-5_queue.c */
 
 /**
 * Allocates memory for an empty queue object using malloc, initializes it,
