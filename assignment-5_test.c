@@ -15,8 +15,8 @@ int main() {
 	return 0;
 }
 
+//Tests functionality of calculator using sample inputs
 void calculator_tests() {
-	/////////////////////////////
 	stack *str = stack_init();
 	push(str, 5);
 	int x = peek(str);
@@ -34,9 +34,9 @@ void calculator_tests() {
 	x = stack_index_of(str, 5);
 	x = stack_size(str);
 	x++;
-	////////////////////////////////
-    char expr1[][MAX_EXPR_LENGTH] = {"2", "2", "+"};
-    char expr2[][MAX_EXPR_LENGTH] = {"2", "2", "+", "3", "*"};
+
+	char expr1[][MAX_EXPR_LENGTH] = {"2", "2", "+"};
+    	char expr2[][MAX_EXPR_LENGTH] = {"2", "2", "+", "3", "*"};
 	char expr3[][MAX_EXPR_LENGTH] = {"4.876555", "7", "3", "+", "*"};
 	char expr4[][MAX_EXPR_LENGTH] = { "-4.8", "7", "3", "+", "*" };
 	char expr5[][MAX_EXPR_LENGTH] = { "-4.8", "-7", "-3", "+", "*" };
@@ -77,9 +77,8 @@ void calculator_tests() {
 
 #define WINDOW_SIZE 2
 
-void log_mgr_tests() {
-	/////////////////////////
-	
+//Tests functionality of log manager using sample inputs
+void log_mgr_tests() {	
 	queue *str = queue_init();
 	enqueue(str, 1);
 	int x = queue_size(str);
@@ -90,8 +89,6 @@ void log_mgr_tests() {
 	x = queue_index_of(str, 1);
 	queue_print(str);
 	
-
-	//////////////////////
     log_manager *log = create_log_mgr( WINDOW_SIZE );
 	/*assert(add_to_log(log,-1 ) == 1);
 	assert(add_to_log(log, 0 ) == 2);
