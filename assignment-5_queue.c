@@ -9,10 +9,8 @@ EE312 - Assignment 5
 #include <stdlib.h>
 #include <stdio.h>
 
-/* Your queue implementations here */
 
-
-
+/* Queue implementations */
 
 queue* queue_init() {
 
@@ -45,7 +43,7 @@ void enqueue(queue* q, long val) {
 		q->head = temp;
 		q->tail = temp;
 	}
-	else {									//skips first time
+	else {							//skips first time
 		q->tail->next = temp;				//asssigns pointer to next node to previous node
 		q->tail = temp;
 	}
